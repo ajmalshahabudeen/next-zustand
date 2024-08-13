@@ -5,8 +5,8 @@ import { poppins } from "@/config/fonts";
 
 
 export const metadata: Metadata = {
-  title: "Next Zustland",
-  description: "Zustland state management library for Next.js",
+  title: "Next Zustand",
+  description: "Zustand state management library for Next.js",
 };
 
 export default function RootLayout({

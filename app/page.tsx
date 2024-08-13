@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <Box>
       <Center h="100vh" flexDirection={"column"} gap={5}>
-        <Heading>Zustland in Next.js</Heading>
+        <Heading>Zustand in Next.js</Heading>
         <Button size={"lg"} variant={"outline"} rightIcon={<GetStartedIcon />}>
           Get Started
         </Button>
