@@ -17,8 +17,8 @@ const PageOne = () => {
   const route = useRouter();
 
   return (
-    <Box>
-      <Center h="100vh" flexDirection={"column"} gap={5}>
+    <Box py={{ base: "8rem", md: "5rem" }}>
+      <Center minH="100vh" flexDirection={"column"} gap={5}>
         <Heading>Page One</Heading>
         <Text fontSize={{ base: "sm", md: "lg" }} border={"1px solid"} p={5}>
           Non persistent state. Refresh to reset the value.

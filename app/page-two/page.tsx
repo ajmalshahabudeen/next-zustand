@@ -16,7 +16,7 @@ import { CodeBlock, dracula } from "react-code-blocks";
 const PageOne = () => {
   const route = useRouter();
   return (
-    <Box py={{ base: '8rem', md: 0 }}>
+    <Box py={{ base: '8rem', md: '6rem' }}>
       <Center h="100vh" flexDirection={"column"} gap={5}>
         <Heading>Page Two</Heading>
         <Text fontSize={"lg"} border={"1px solid"} p={5} textAlign={"center"}>

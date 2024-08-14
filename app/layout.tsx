@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <Providers>
-          <Box position={"fixed"} top={0} right={0} p={10} display={"flex"} gap={5} justifyContent={"flex-end"} className="backdrop-blur-xl bg-inherit bg-opacity-50 w-full z-40">
+          <Box position={"fixed"} top={0} right={0} p={10} display={"flex"} gap={5} justifyContent={"flex-end"} className="backdrop-blur-xl w-full z-40">
             <DocsButton />
             <SourceButton />
             <ThemeToggle />
