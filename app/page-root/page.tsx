@@ -33,6 +33,9 @@ const PageRoot = () => {
             </span>
             . So you can call this state globally.
           </Text>
+          <Text fontSize={"lg"} textAlign={"center"} pt={2}>
+            Visit Docs to read Zustand Docs. And Visit Source to read Source Code.
+          </Text>
         </Box>
         <Flex gap={5} flexWrap={"wrap"} justifyContent={"center"}>
           <Button
