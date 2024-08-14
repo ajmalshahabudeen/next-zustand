@@ -5,9 +5,10 @@ import {
   Center,
   Flex,
   Heading,
-  Highlight,
+  IconButton,
   Text,
 } from "@chakra-ui/react";
+import { Icon } from "@iconify/react";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -15,15 +16,25 @@ const PageRoot = () => {
   const route = useRouter();
   return (
     <Box>
-      <Center h="100vh" flexDirection={"column"} gap={5}>
-        <Heading>Zustand Examples</Heading>
+      <Center h="100vh" flexDirection={"column"} gap={5} p={5}>
+        <Flex gap={5}>
+          <IconButton
+            aria-label="go back"
+            icon={<GoBackIcon />}
+            onClick={() => route.back()}
+          />
+          <Heading>Zustand Examples</Heading>
+        </Flex>
         <Box>
-          <Text>
-            Simply Create a file at root of the project. <span className="underline underline-offset-8">eg: `&#123;
-            $ProjectFolder &#125;/hooks/useUserStore.tsx`</span>. So you can call this state globally.
+          <Text fontSize={"lg"} textAlign={"center"}>
+            Simply Create a file at root of the project.{" "}
+            <span className="underline underline-offset-8">
+              eg: `&#123; $ProjectFolder &#125;/hooks/useUserStore.tsx`
+            </span>
+            . So you can call this state globally.
           </Text>
         </Box>
-        <Flex gap={5}>
+        <Flex gap={5} flexWrap={"wrap"} justifyContent={"center"}>
           <Button
             variant={"outline"}
             colorScheme="purple"
@@ -52,3 +63,7 @@ const PageRoot = () => {
 };
 
 export default PageRoot;
+
+const GoBackIcon = () => {
+  return <Icon icon={"material-symbols:arrow-back-rounded"} fontSize={24} />;
+};

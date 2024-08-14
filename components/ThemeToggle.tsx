@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react"
 export const ThemeToggle = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     return (
-      <Box p={10}>
+      <Box>
         <Button colorScheme="teal" variant={"outline"} onClick={toggleColorMode}>
           {colorMode === 'light' ? <DarkIcon /> : <LightIcon />}
         </Button>

@@ -12,7 +12,7 @@ const HomePage = () => {
     <Box>
       <Center h="100vh" flexDirection={"column"} gap={5}>
         <Heading as={"h1"}>Zustand in Next.js</Heading>
-        <Text fontSize={"3xl"}>
+        <Text fontSize={{ base: "lg", md: "3xl" }} textAlign={"center"}>
           A global state management library for React.
         </Text>
         <CodeOne />
