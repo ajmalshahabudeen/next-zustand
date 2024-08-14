@@ -10,7 +10,7 @@ const PageOne = () => {
     <Box>
       <Center h="100vh" flexDirection={"column"} gap={5}>
         <Heading>Page Two</Heading>
-        <Text fontSize={"lg"} border={"1px solid black"} p={5}>
+        <Text fontSize={"lg"} border={"1px solid"} p={5}>
           Persistent state. Refresh the page to test. The value is stored in
           sessionStorage.
         </Text>

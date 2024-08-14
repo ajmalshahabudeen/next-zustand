@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./provider";
 import { poppins } from "@/config/fonts";
-
+import { Box } from "@chakra-ui/react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Next Zustand",
@@ -17,7 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Box position={"fixed"} top={0} right={0} display={"flex"}>
+            <ThemeToggle />
+          </Box>
+          {children}
+        </Providers>
       </body>
     </html>
   );

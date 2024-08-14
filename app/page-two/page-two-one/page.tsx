@@ -31,7 +31,7 @@ const PageOne = () => {
     <Box>
       <Center h="100vh" flexDirection={"column"} gap={5}>
         <Heading>Page Two &gt; One</Heading>
-        <Text fontSize={"lg"} border={"1px solid black"} p={5}>
+        <Text fontSize={"lg"} border={"1px solid"} p={5}>
           Add a custom user name and go back
         </Text>
         <form onSubmit={submit} className="flex gap-1">

@@ -1,6 +1,6 @@
 "use client";
 import { useStore } from "@/hooks/store";
-import { Box, Button, Center, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Flex, Heading, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -11,14 +11,27 @@ const PageOne = () => {
     <Box>
       <Center h="100vh" flexDirection={"column"} gap={5}>
         <Heading>Page One</Heading>
-        <Text fontSize={"lg"} border={"1px solid black"} p={5}>
+        <Text fontSize={"lg"} border={"1px solid"} p={5}>
           Non persistent state. Refresh to reset the value.
         </Text>
         <BearCounter />
         <Controls />
-        <Button size={"lg"} variant={"outline"} onClick={() => route.push("/page-two") }>
-          Next Page
-        </Button>
+        <Flex gap={5}>
+          <Button
+            size={"lg"}
+            variant={"outline"}
+            onClick={() => route.back()}
+          >
+            Go Back
+          </Button>
+          <Button
+            size={"lg"}
+            variant={"outline"}
+            onClick={() => route.push("/page-two")}
+          >
+            Next Page
+          </Button>
+        </Flex>
       </Center>
     </Box>
   );
